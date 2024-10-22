@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas2.html</title>
+    <link rel="stylesheet" href="tugaspw2.css">
+</head>
+<style>
+    .container {
+        position:absolute;
+        top: 10%;
+        left: 20%;
+        z-index: 1;
+    }
+</style>
+
+<body>
+    <div class="gambar">
+
+        <tr>
+    <h2 style="text-align: center;" class="judul">Formulir Camping Mahasiswa FASILKOM-TI </h2>
+
+    <center>
+        <img src="https://png.pngtree.com/png-clipart/20230913/original/pngtree-camping-clipart-camping-tent-with-fire-and-woods-cartoon-vector-png-image_11063597.png" width="300"></center>
+    <p><b>Tanggal:</b> 8 September 2024</p>
+    <p><b>Jam:</b> 09.00</p>
+    <p><b>Lokasi:</b> Bumi Perkemahan Sibolangit</p>
+
+    </tr>
+    </div>
+
+    
+
+    
+    <form action="#">
+        <div class="lukis">
+        <fieldset>
+        <legend>Login Akun</legend>
+        <table>
+            <tr>
+               <td><label for="email"> Email(*) </label></td>
+               <td><input type="email" id="jelitaamy5@gmail.com" name="email" required></td>
+           </tr>
+
+        <tr>
+            <td><label for="pass"> password(*) </label></td>
+            <td><input type="password" id="pass" name="password" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="020408">Konfirmasi Password(*) </label></td>
+            <td><input type="password" id="020408" name="020408" required></td>
+        </tr>
+
+        <!--<input type="submit" value="daftar"-->
+    <tr>
+        <td></td>
+        <td>
+            <button type="submit">next</button>
+        </td>    
+
+    </table>
+    </fieldset>   
+    </form>
+</div>
+
+<div class="tari">
+    <form action="#">
+        <fieldset>
+        <legend>Informasi Pribadi</legend>
+        <table>
+            <tr>
+                <!--<td><label for="nama">Nama</label></td>-->
+                <td><label for="Jelita Amy"> Nama </label></td>
+                <td><input type="text" name="nama" id="JelitaAmy"></td>
+           </tr>
+
+           <tr>
+            <td><label for="usia">usia</label></td>
+            <td><input type="usia" id="number" name="usia"></td>
+        </tr>
+
+        <tr>
+            <td><label for="ttl">Tanggal Lahir</label></td>
+            <td>
+                <input type="date" name="ttl" id="ttl">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td><input type="radio" id="lk" name="jk" value="laki laki"><label for="lk">laki laki</label><br>
+                <input type="radio" id="pr" name="jk" value="perempuan"><label for="pr">perempuan</label></td>
+            </tr>
+            
+        <tr>
+            <td><label for="nomor handphone">Nomor Handphone</label></td>
+            <td><input type="nh" id="nh" name="nh" </td>
+        </tr>    
+            <!--ALAMAT-->
+            <td><label for="Alamat">Alamat</label></td>
+            <td><textarea name="Alamat" id="Alamat" rows="5" 
+            cols="21" placeholder="Isi alamat disini"></textarea></td>
+
+        <!--<input select name="prodi" option value="TI"-->
+        <tr>
+            <td> Program Studi</td>
+            <td> <select name="prodi" id="prodi">
+                <option value="#">-- Pilih Salah Satu --</option>
+                <option value="Ilkom">S-1 Ilmu Komputer</option>
+                <option value="TI">S-1 Teknologi Informasi</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Ukuran Baju</td>
+            <td><input type="radio" id="S" name="ub" value="1"><label for="S">S</label><br>
+                <input type="radio" id="M" name="ub" value="1"><label for="M">M</label><br>
+                <input type="radio" id="XL" name="ub" value="1"><label for="XL">XL</label><br>
+                <input type="radio" id="XXL" name="ub" value="1"><label for="XXL">XXL</label></td>
+            </tr>
+        
+        <!--<input type="submit" value="daftar"-->
+    <tr>
+        <td></td>
+        <td>
+            <button type="submit">next</button>
+        </td>    
+
+    </table>
+    </fieldset>   
+    </form>
+    </div>
+
+<div class="or">
+    <form action="#">
+        <fieldset>
+        <legend>Survei Kegiatan</legend>
+        <table>
+
+            <p><b>Pilih Berdasarkan Minat Anda</b></p>
+
+            <td>Aktivitas Pagi</td>
+            <td><input type="radio" id="Jogging" name="ap" value="Jogging"><label for="Jogging">Jogging</label><br>
+                <input type="radio" id="Senam" name="ap" value="Senam"><label for="Senam">Senam</label></td>
+            </tr>
+
+            <td>Sarapan</td>
+            <td><input type="radio" id="Roti" name="sarapan" value="Roti"><label for="Roti">Roti</label><br>
+                <input type="radio" id="Oats" name="sarapan" value="Oats"><label for="Oats">Oats</label></td>
+            </tr>
+
+            <td>Minuman</td>
+            <td><input type="radio" id="Kopi" name="minuman" value="Kopi"><label for="Kopi">Kopi</label><br>
+                <input type="radio" id="Teh" name="minuman" value="Teh"><label for="Teh">Teh</label></td>
+            </tr>
+
+            <div class="makan">
+            <td>Makan Siang</td>
+            <td><input type="checkbox" name="info" id="ss"><label for="ss">Sayur Sop</label></br>
+              <input type="checkbox" name="info" id="td"><label for="td">Telur Dadar</label></br>
+              <input type="checkbox" name="info" id="sg"><label for="sg">Sosis Goreng</label></br>
+              <input type="checkbox" name="info" id="tg"><label for="tg">Tempe Goreng</label></br>
+              <input type="checkbox" name="info" id="sambal"><label for="sambal">Sambal</label></br></td>
+        </tr> 
+        </div>
+
+            <td>Games (maks 4)</td>
+            <td><input type="checkbox" class="radio" value="1" name="lb">Lempar Balon </label><br>
+                <input type="checkbox" class="radio" value="4" name="ap">Battle Suit </label><br>
+                <input type="checkbox" class="radio" value="4" name="ap">Walk In the Dark </label><br>
+                <input type="checkbox" class="radio" value="4" name="ap">Tangkap Buaya </label><br>
+                <input type="checkbox" class="radio" value="4" name="lb">Balon Kereta Api </label><br>
+                <input type="checkbox" class="radio" value="4" name="lb">Voli Air </label><br>
+                </td>
+            </tr>
+
+            <td>Aktivitas Malam</td>
+            <td><input type="radio" id="menyanyi" name="am" value="menyanyi"><label for="menyanyi">Menyanyi</label><br>
+                <input type="radio" id="ss" name="am" value="ss"><label for="ss">Sharing session</label></td>
+            </tr>
+
+            <td>Makan Malam</td>
+            <td><input type="checkbox" name="info" id="ss"><label for="ss">Ikan Bakar</label></br>
+              <input type="checkbox" name="info" id="td"><label for="td">Ayam Bakar</label></br>
+              <input type="checkbox" name="info" id="sg"><label for="sg">mie instan</label></br></td>
+        </tr> 
+
+        <!--<input type="submit" value="daftar"-->
+    <tr>
+        <td></td>
+        <td>
+            <button type="submit">next</button>
+        </td>    
+
+    </table>
+    </fieldset>   
+    </form>
+    </div>
+
+<div class="feb">
+    <form action="#">
+        <fieldset>
+        <legend>Informasi Kesehatan</legend>
+        <table>
+
+            <p><b>Silahkan isi dengan "-" jika tidak memiliki riwayat kesehatan</b></p>
+            <tr>
+               <td><label for="Penyakit"> Jenis Penyakit(*) </label></td>
+               <td><input type="Penyakit" id="Penyakit" name="penyakit" required></td>
+           </tr>
+
+           <td>Tingkat Keseriusan Sakit</td>
+           <td><input type="radio" id="ringan" name="tks" value="ringan"><label for="ringan">Ringan</label><br>
+               <input type="radio" id="sedang" name="tks" value="sedang"><label for="sedang">Sedang</label><br>
+               <input type="radio" id="parah" name="tks" value="parah"><label for="parah">Parah</label><br>
+               <input type="radio" id="-" name="tks" value="-""><label for="-">-</label></td>
+           </tr>
+
+           <td>Pernah dirawat di Rumah Sakit?</td>
+            <td><input type="radio" id="ya" name="rawat" value="ya"><label for="ya">Ya</label><br>
+                <input type="radio" id="tidak" name="rawat" value="tidak"><label for="tidak">Tidak</label></td>
+            </tr>
+
+            <td><label for="Alasan">Alasan dirawat</label></td>
+            <td><textarea name="Alasan" id="Alasan" rows="5" 
+            cols="21" placeholder="Isi alasan disini"></textarea></td>
+
+
+        <!--<input type="submit" value="daftar"-->
+    <tr>
+        <td></td>
+        <td>
+            <button type="submit">submit</button>
+        </td>    
+
+    </table>
+    </fieldset>   
+    </form>
+    </div>
+
+    
+    
+</body>
+</div>
+</html>

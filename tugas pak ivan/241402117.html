@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+</head>
+<body>
+    <form name="form">
+        <input type="number" style="margin-top: 10px; margin-bottom: 10px;" name="pulsa" id="pulsa" placeholder="Nominal Isi Pulsa" ><br>
+        <input type="radio" name="kartu" id="Telkomsel" value="Telkomsel" ><label for="Telkomsel">Telkomsel</label>
+        <input type="radio" name="kartu" id="Indosat" value="Indosat" ><label for="Indosat">Indosat</label>
+        <input type="radio" name="kartu" id="XL" value="XL" ><label for="XL">XL</label><br>
+        <button type="button" style="margin-top: 10px; margin-bottom: 15px;" onclick="Total()">Biaya</button>
+    </form>
+
+    <script>
+        function Total(){
+            let pulsa = parseInt(document.form.pulsa.value);
+            let kartu = document.form.kartu.value;
+            let diskon = 0;
+            let hasil = 0;
+
+            if(kartu == "Telkomsel"){
+                diskon = 0.1;
+                hasil =pulsa - (pulsa*diskon)
+                alert(`diskon 10%, Biaya : ${hasil}`);
+            }else if(kartu == "Indosat"){
+                diskon = 0.05;
+                hasil =pulsa - (pulsa*diskon)
+                alert(`diskon 5%, Biaya : ${hasil}`);
+            }else if(kartu == "XL"){
+                diskon = 0.02;
+                hasil =pulsa - (pulsa*diskon)
+                alert(`diskon 2%, Biaya : ${hasil}`);
+            }
+        }
+    </script>
+    
+</body>
+</html>

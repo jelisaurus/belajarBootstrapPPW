@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAlert()">alert</button>
+    <button onclick="showConfirm()">confirm</button>
+    <button onclick="showPrompt()">prompt</button>
+    <script>
+        function showAlert(){
+            alert("halo kom C2");
+        }
+
+        function showConfirm(){
+            let result = confirm("klik ok jika kamu sudah makan?");
+            
+             if (result){
+                alert("kamu sudah makan");
+             } else {
+                alert("kamu belum makan");
+             }
+        }
+
+        function showPrompt(){
+            let nama = prompt("masukkan nama anda : ");
+            if (nama == null || nama == ""){
+                alert("anda tidak memasukkan input!!! silahkan ulangi")
+            } 
+            else {
+                alert("halo " + nama)
+            }
+        }
+    </script>
+</body>
+</html>

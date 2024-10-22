@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formdaftar">
+        <table>
+            <tr>
+                <td>nama</td>
+                <td><input type="textbox" name="nama" size="30"></td></tr>
+            <tr>
+                <td>pasword</td>
+                <td><input type="password" name="sandi" size="30"></td></tr>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="proses()" name="submit">+
+                </button>&nbsp;<button type="button" onclick="proses()" name="submit">-
+                </button>&nbsp;</td></tr>
+        </table>
+    </form>
+
+    <script>
+        function proses()
+        {
+            let name=document.formdaftar.nama.value;
+            let password=document.formdaftar.sandi.value;
+            document.write("data yang anda input adalah :<br>");
+            document.write("nama : "+name+" <br>");
+            document.write("password : "+password)
+        }
+    </script>
+
+
+</body>
+</html>

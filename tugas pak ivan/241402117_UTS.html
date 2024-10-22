@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS PW</title>
+</head>
+<body>
+    <form name="cnilai">
+        <label for="nilai">Input Nilai</label>
+        <input type="number" id="nilai" name="nilai" style="width: 60px;">
+        
+        <button type="button" onclick="skor()">Cek Nilai</button>
+    </form>
+
+    <script>
+        function skor(){
+            let nilai=document.cnilai.nilai.value;
+
+            if (nilai >= 80){
+                alert("Nilai : A")
+            } else if (nilai >= 75 && nilai <=80){
+                alert("Nilai : B+")
+            } else if (nilai >=70 && nilai <=75){
+                alert("Nilai : B")
+            } else if (nilai >=65 && nilai <=70){
+                alert("Nilai : C+")
+            } else if (nilai >=60 && nilai <=65){
+                alert("Nilai : C")
+            } else if (nilai >=55 && nilai <=60){
+                alert("Nilai : D")
+            } else if(nilai <55){
+                alert("Nilai : E")
+            }
+        }
+    </script>
+</body>
+</html>

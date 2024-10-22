@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form">
+        <label for="numb1">Masukkan angka pertama: </label><input type="text" name="numb1" id="numb1"><br>
+        <label for="numb2">Masukkan angka kedua: </label><input type="text" name="numb2" id="numb2"><br>
+        <button type="button" onclick="hitung('+')" name="opsi">+</button>&nbsp;
+        <button type="button" onclick="hitung('-')" name="opsi">-</button>&nbsp;
+        <button type="button" onclick="hitung('*')" name="opsi">*</button>&nbsp;
+        <button type="button" onclick="hitung('/')" name="opsi">/</button>
+    </form>
+
+    <script>
+        function hitung(opsi){
+            let a = parseInt(document.form.numb1.value);
+            let b = parseInt(document.form.numb2.value);
+            if(opsi == "+"){
+                alert(a+b)
+            }else if(opsi == "-"){
+                document.write(a-b)
+            }else if(opsi == "*"){
+                document.write(a*b)
+            }else{
+                document.write(a/b)
+            }
+        }
+    </script>
+    
+</body>
+</html>

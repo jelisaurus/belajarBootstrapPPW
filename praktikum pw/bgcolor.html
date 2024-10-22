@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengubah Warna Latar Belakang</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        transition: background-color 0.5s;
+      }
+      .color-changer {
+        text-align: center;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #current-color {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color-changer">
+      <h2>Pengubah Warna Latar Belakang</h2>
+      <button id="red-btn">Merah</button>
+      <button id="green-btn">Hijau</button>
+      <button id="blue-btn">Biru</button>
+      <button id="black-btn">black</button>
+      <p id="current-color">Warna saat ini: putih</p>
+    </div>
+
+    <script>
+      function changebackgroundColor(color){
+        document.body.style.backgroundColor = color;
+        document.getElementById("current-color").textContent = "Warna saat ini : " + color;
+
+      }
+
+      document.getElementById("red-btn").addEventListener("click", function() {
+        changebackgroundColor("red")
+      })
+      document.getElementById("green-btn").addEventListener("click", function() {
+        changebackgroundColor("green")
+      })
+      document.getElementById("blue-btn").addEventListener("click", function() {
+        changebackgroundColor("blue")
+      })
+      document.getElementById("black-btn").addEventListener("click", function() {
+        changebackgroundColor("black")
+      })
+    </script>
+  </body>
+</html>

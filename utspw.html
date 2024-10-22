@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS PROWEB</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <form name="regis">
+        <table>
+            <tr>
+                <th colspan="2" style="color: red; text-align: center;">Registrasi Anggota</th>
+            </tr>
+
+            <tr>
+                <td style="padding-left: 7px;"><label for="user">Username :</label></td>
+                <td><input type="text" id="user" name="user" style="border: none"></td>
+            </tr>
+
+            <tr>
+                <td style="padding-left: 10px;"><label for="pass">Password :</label></td>
+                <td><input type="password" id="pass" name="pass" style="border: none"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="btn btn-danger" onclick="regist()">Register</button>&nbsp;
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function regist(){
+            let user=document.regis.user.value;
+            let pass=document.regis.pass.value;
+            if (user == ""|| pass == ""){
+                alert("Data Username atau Password belum diisi")    
+            } else if (user == "Budi" || user == "Iwan"){
+                alert("Username Sudah Terdaftar")
+            } else (
+                alert("Registrasi Berhasil")
+            )
+        }
+    </script>
+</body>
+</html>
